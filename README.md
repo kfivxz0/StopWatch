@@ -69,5 +69,5 @@ selector : 타이머 실행될 때 보낼 메시지 (func)
 userInfo: 사용자 정보. 필요 없는 경우 nil을 사용합니다.
 repeats: 타이머를 반복할 것인지에 대한 여부입니다. true - 반복, false - 1회
 */
-scheduledTimer(timeInterval:target:selector:userInfo:repeats:)
+scheduledTimer(timeInterval:, target:, selector:, userInfo:, repeats:)
 ```
