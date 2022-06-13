@@ -71,6 +71,19 @@ repeats: 타이머를 반복할 것인지에 대한 여부입니다. true - 반�
 */
 scheduledTimer(timeInterval:, target:, selector:, userInfo:, repeats:)
 ```
+
 시간, 분, 초를 표시합니다.
 ```SWIFT
+// 아래와 같은 코드로 계산한 뒤
 return((seconds / 3600), ((seconds % 3600) / 60), ((seconds % 3600) % 60))
+
+// 시간, 분, 초로 나타냅니다.
+{
+var timeString = ""
+timeString += String(format: "%02d", hours)
+timeString += " : "
+timeString += String(format: "%02d", minutes)
+timeString += " : "
+timeString += String(format: "%02d", seconds)
+return timeString
+}
