@@ -26,5 +26,32 @@ Stop Watch를 이용해 시간을 체크할 수 있습니다.
 ![스크린샷 2022-06-10 오후 4 42 24](https://user-images.githubusercontent.com/106981296/173398557-fba95fe0-b1df-4910-8e47-6f84c8bcdc42.png)
 
 ---
+
 ## 주요 코드 해석
 
+```SWIFT
+// 타이머가 설정한 간격대로 실행되는지 확인하기 위한 변수로. Int형으로 선언하고 0으로 초기화 하였습니다.
+var count:Int = 0
+```
+
+```SWIFT
+// START(STOP) 버튼의 색을 초록색으로 초기화합니다.
+startStopButton.setTitleColor(UIColor.green, for: .normal)
+```
+
+```SWIFT
+// timerCounting이 false(동작하지 않고 있다)면 버튼에 START가 초록색으로 표시됩니다. 
+if(timerCounting)
+{
+     timerCounting = false
+     timer.invalildate()
+     startStopButton.setTitle("START", for: .normal)
+     startStopButton.setTitleColor(UIColor.green, for: .normal)
+ }
+ 
+ // timerCounting이 true(동작하고 있다)면 버튼에 STOP이 빨간색으로 표시됩니다.
+ else
+ {
+     timerCounting = true
+     startStopButton.setTitle("STOP", for: .normal)
+     startStopButton.setTitleColor(UIColor.red, for: .normal)
