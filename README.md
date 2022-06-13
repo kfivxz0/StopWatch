@@ -98,7 +98,7 @@ alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: { (_) in
 alert.addAction(UIAlertAction(title: "예", style: .default, handler: { (_) in)}
 ```
 
-Alert의 '예' 버튼을 누르면 시간이 초기화 되도록 설정합니다.
+아래 코드를 추가해 Alert의 '예' 버튼을 누르면 시간이 초기화 되도록 설정합니다.
 ```SWIFT
 self.TimerLabel.text = self.makeTimeString(hours: 0, minutes: 0, seconds: 0)
 ```
