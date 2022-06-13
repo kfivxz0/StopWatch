@@ -1,1 +1,1 @@
-## * Stop Watch 만들기
+## Stop Watch 만들기
