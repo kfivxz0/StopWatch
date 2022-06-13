@@ -55,3 +55,19 @@ if(timerCounting)
      timerCounting = true
      startStopButton.setTitle("STOP", for: .normal)
      startStopButton.setTitleColor(UIColor.red, for: .normal)
+     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
+     }
+  }
+```
+
+* Timer.scheduledTimer() 함수
+```SWIFT
+/* 
+timeInterval : 타이머 실행 시간. 해당 시간 간격으로 메시지(selector)를 보냅니다.
+target: 타이머가 실행될 때 메시지를 보낼 개체. 일반적으로 self를 사용합니다.
+selector : 타이머 실행될 때 보낼 메시지 (func)
+userInfo: 사용자 정보. 필요 없는 경우 nil을 사용합니다.
+repeats: 타이머를 반복할 것인지에 대한 여부입니다. true - 반복, false - 1회
+*/
+scheduledTimer(timeInterval:target:selector:userInfo:repeats:)
+```
