@@ -71,3 +71,6 @@ repeats: 타이머를 반복할 것인지에 대한 여부입니다. true - 반�
 */
 scheduledTimer(timeInterval:, target:, selector:, userInfo:, repeats:)
 ```
+시간, 분, 초를 표시합니다.
+```SWIFT
+return((seconds / 3600), ((seconds % 3600) / 60), ((seconds % 3600) % 60))
