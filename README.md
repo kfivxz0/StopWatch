@@ -87,3 +87,18 @@ timeString += " : "
 timeString += String(format: "%02d", seconds)
 return timeString
 }
+```
+Reset 버튼이 작동하도록 설정합니다.
+```SWIFT
+// 아래 함수를 사용해 Alert의 전체를 디자인합니다.
+UIAlertController(title: "Timer를 Reset 하시겠습니까?", message:"타이머를 재설정 하시겠습니까?", preferredStyle: alert)
+
+// 아래 함수를 사용해 Alert의 세부내용을 추가합니다.
+alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: { (_) in)}
+alert.addAction(UIAlertAction(title: "예", style: .default, handler: { (_) in)}
+```
+
+Alert의 '예' 버튼을 누르면 시간이 초기화 되도록 설정합니다.
+```SWIFT
+self.TimerLabel.text = self.makeTimeString(hours: 0, minutes: 0, seconds: 0)
+```
