@@ -1,4 +1,4 @@
-# Stop Watch 만들기
+# Stop Watch 만들기 (기말 과제)
 Stop Watch를 이용해 시간을 체크할 수 있습니다.
 
 ---
